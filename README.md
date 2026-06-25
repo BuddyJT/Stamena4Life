@@ -8,7 +8,6 @@ Static GitHub Pages rebuild for `stamena4life.com`.
 - Preserved core live-site links for Square, Google Forms, PDFs, Spotify/Podcasters, YouTube, booking, and donation flows.
 - Local logo and core image assets under `assets/`.
 - Required footer disclaimer.
-- `CNAME` for the custom domain.
 - Legacy path redirects for `/aboutus`, `/hop`, `/resources`, `/booking`, `/pmc`, `/donate`, and `/plans-pricing`.
 
 ## Deploy
@@ -16,10 +15,10 @@ Static GitHub Pages rebuild for `stamena4life.com`.
 1. Push this folder to a GitHub repository.
 2. In GitHub, open **Settings > Pages**.
 3. Set source to the `main` branch and `/ (root)`.
-4. Confirm the custom domain is `stamena4life.com`.
-5. Configure DNS for GitHub Pages:
-   - Apex `A` records to GitHub Pages IPs.
-   - Optional `www` CNAME to your GitHub Pages hostname.
+4. Leave **Custom domain** empty if you want to preview at the default project URL.
+5. Visit `https://YOUR-GITHUB-USERNAME.github.io/stamena4life-pages/`.
+
+To attach `stamena4life.com` later, add the custom domain back in GitHub Pages settings and configure DNS at that time.
 
 ## Content Notes
 
