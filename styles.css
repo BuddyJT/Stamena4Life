@@ -571,6 +571,35 @@ p {
   color: var(--deep);
 }
 
+.resource-video {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(360px, 1.22fr);
+  gap: clamp(20px, 4vw, 34px);
+  align-items: center;
+  width: min(var(--max), 100%);
+  margin: 0 auto 24px;
+  padding: 20px;
+  background: var(--white);
+  border: 1px solid rgba(201, 154, 61, 0.3);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 30px rgba(23, 34, 31, 0.08);
+}
+
+.resource-video h3 {
+  font-size: clamp(1.45rem, 3vw, 2rem);
+}
+
+.resource-video p:not(.eyebrow) {
+  color: var(--muted);
+}
+
+.resource-video video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #050505;
+  border-radius: var(--radius);
+}
+
 .resource-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -885,8 +914,14 @@ textarea:focus {
 }
 
 .footer-brand img {
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
+  padding: 6px;
+  background: var(--paper);
+  border: 1px solid rgba(201, 154, 61, 0.42);
+  border-radius: 50%;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+  object-fit: contain;
 }
 
 .footer-top nav {
@@ -1000,6 +1035,7 @@ textarea:focus {
   .bio-grid,
   .program-grid,
   .about-feature,
+  .resource-video,
   .support-panel,
   .media-grid {
     grid-template-columns: 1fr;
